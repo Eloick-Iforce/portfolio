@@ -43,7 +43,7 @@
       "description": "This is project 1",
       "image": "/img/nomad.png",
       "url": "https://nomadexplorer.pointud.etu.mmi-unistra.fr/",
-      "technologies": ["Symfony", "Tailwind", "JavaScript", "Google API"]
+      "technologies": ["Symfony", "Tailwind", "Google API"]
     },
     {
       "id": 5,

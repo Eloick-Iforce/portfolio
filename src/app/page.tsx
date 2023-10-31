@@ -2,6 +2,8 @@ import Header from "./components/header";
 import Navigation from "./components/nav";
 import List from "./components/list";
 import Projects from "./components/projects";
+import FormComponent from "./components/form";
+import { Toaster } from "react-hot-toast";
 
 export default function HomePage() {
   return (
@@ -11,6 +13,8 @@ export default function HomePage() {
         <Header />
         <List />
         <Projects />
+        <FormComponent />
+        <Toaster />
       </div>
     </main>
   );

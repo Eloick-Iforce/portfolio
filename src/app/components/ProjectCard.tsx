@@ -13,7 +13,7 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project }: ProjectCardProps) => (
-  <div className="card my-4 overflow-hidden rounded-lg bg-[#2C4251] shadow-lg">
+  <div className="card my-4 w-[30rem] overflow-hidden rounded-lg bg-[#2C4251] shadow-lg">
     <img
       className="h-96 w-full object-cover"
       src={project.image}

@@ -5,7 +5,7 @@ import { usePathname } from "next/navigation";
 function Navigation() {
   const pathname = usePathname();
   return (
-    <nav className=" bg-primary fixed flex w-full justify-around p-4">
+    <nav className=" bg-primary fixed z-50 flex w-full justify-around p-4">
       <Link href="/">
         <p className="text-white ">Home</p>
       </Link>
