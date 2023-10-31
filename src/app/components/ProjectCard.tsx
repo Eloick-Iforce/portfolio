@@ -6,7 +6,7 @@ type ProjectCardProps = {
     description: string;
     image: string;
     url: string;
-    git: string;
+    git?: string;
     technologies: string[];
   };
 };
