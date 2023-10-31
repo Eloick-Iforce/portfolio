@@ -1,0 +1,58 @@
+{
+  "skills": [
+    "HTML",
+    "CSS",
+    "JavaScript",
+    "React",
+    "PHP",
+    "Laravel",
+    "Symfony",
+    "Unity",
+    "Tailwind"
+  ],
+  "projects": [
+    {
+      "id": 1,
+      "name": "Crimsonland",
+      "description": "This is project 1",
+      "image": "/img/crimsonland.png",
+      "url": "https://crimsonlands.mickisze.etu.mmi-unistra.fr/",
+      "technologies": ["Twig", "CSS", "PHP"]
+    },
+    {
+      "id": 2,
+      "name": "Webdoc : Electricity",
+      "description": "This is project 1",
+      "image": "/img/cuej.png",
+      "url": "https://www.cuej.info/mini-sites/electricite/index.php",
+      "git": "https://github.com/Eloick-Iforce/sae301",
+      "technologies": ["Twig", "CSS", "JavaScript", "PHP"]
+    },
+    {
+      "id": 3,
+      "name": "Water informations",
+      "description": "This is project 1",
+      "image": "/img/eau.png",
+      "url": "https://sae303.mickisze.etu.mmi-unistra.fr/",
+      "git": "https://github.com/Eloick-Iforce/SAE-303",
+      "technologies": ["ChartJs", "Tailwind", "JavaScript"]
+    },
+    {
+      "id": 4,
+      "name": "Nomad Explorer",
+      "description": "This is project 1",
+      "image": "/img/nomad.png",
+      "url": "https://nomadexplorer.pointud.etu.mmi-unistra.fr/",
+      "technologies": ["Symfony", "Tailwind", "JavaScript", "Google API"]
+    },
+    {
+      "id": 5,
+      "name": "Hair App",
+      "description": "This is project 1",
+      "image": "/img/hair.png",
+      "url": "https://hair-app-chi.vercel.app/",
+      "git": "https://github.com/Eloick-Iforce/hair-app",
+      "technologies": ["React", "Tailwind", "JavaScript", "Nextjs"]
+    }
+  ]
+}

@@ -1,3 +1,20 @@
 @tailwind base;
 @tailwind components;
 @tailwind utilities;
+
+@keyframes slide {
+  0% {
+    transform: translateX(0);
+  }
+  100% {
+    transform: translateX(-50%);
+  }
+}
+
+.loop-slider {
+  animation: slide var(--duration) linear infinite;
+}
+
+.loop-slider.reverse {
+  animation-direction: reverse;
+}
