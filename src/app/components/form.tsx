@@ -8,7 +8,7 @@ const FormComponent = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const handleSubmit = (e) => {
+  const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
     toast.success("Votre message a été envoyé !");
     setName("");
