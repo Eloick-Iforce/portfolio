@@ -10,7 +10,7 @@ const FormComponent = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    toast.success("Votre message a été envoyé !");
+    toast.success("Message sent with success !");
     setName("");
     setEmail("");
     setSubject("");
