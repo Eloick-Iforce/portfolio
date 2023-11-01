@@ -50,10 +50,6 @@ function Navigation() {
           {isOpen && (
             <div className="bg-primary fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-16 text-4xl">
               <button onClick={closeMenu}> Close </button>
-
-              <Link href="/" onClick={closeMenu}>
-                <p className="text-white">Home</p>
-              </Link>
               <Link href="#about" onClick={closeMenu}>
                 <p className="text-white">About</p>
               </Link>
