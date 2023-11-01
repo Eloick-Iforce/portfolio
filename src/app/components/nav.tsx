@@ -68,18 +68,20 @@ function Navigation() {
         </>
       ) : (
         <>
-          <Link href="/">
-            <p className="text-white">Home</p>
-          </Link>
-          <Link href="#about">
-            <p className="text-white">About</p>
-          </Link>
-          <Link href="#projects">
-            <p className="text-white">Projects</p>
-          </Link>
-          <Link href="#contact">
-            <p className="text-white">Contact</p>
-          </Link>
+          <div className="flex gap-8">
+            <Link href="/">
+              <p className="text-white">Home</p>
+            </Link>
+            <Link href="#about">
+              <p className="text-white">About</p>
+            </Link>
+            <Link href="#projects">
+              <p className="text-white">Projects</p>
+            </Link>
+            <Link href="#contact">
+              <p className="text-white">Contact</p>
+            </Link>
+          </div>
         </>
       )}
     </nav>
