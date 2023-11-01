@@ -54,5 +54,17 @@
       "git": "https://github.com/Eloick-Iforce/hair-app",
       "technologies": ["React", "Tailwind", "JavaScript", "Nextjs"]
     }
+  ],
+  "technologies": [
+    "ChartJs",
+    "JavaScript",
+    "React",
+    "Symfony",
+    "Tailwind",
+    "Twig",
+    "CSS",
+    "PHP",
+    "Laravel",
+    "Unity"
   ]
 }
