@@ -3,19 +3,70 @@ import { useState } from "react";
 import { toast } from "react-hot-toast";
 import TextareaAutosize from "react-textarea-autosize";
 
+declare let Email: any;
+
 const FormComponent = () => {
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
+  const sendToDiscord = async (
+    name: string,
+    email: string,
+    subject: string,
+    message: string,
+  ) => {
+    const webhookURL =
+      "https://discord.com/api/webhooks/1169601255862194228/dWUULuXuHlJjgH1KpWkzCsINr7COtFJlJ0YD1ejAzJ5JjwgNmH0OGu1tPfbOeAeDoqkw";
+    const data = {
+      embeds: [
+        {
+          title: "New message from website",
+          fields: [
+            {
+              name: "Name",
+              value: name,
+              inline: true,
+            },
+            {
+              name: "Email",
+              value: email,
+              inline: true,
+            },
+            {
+              name: "Subject",
+              value: subject,
+              inline: false,
+            },
+            {
+              name: "Message",
+              value: message,
+              inline: false,
+            },
+          ],
+        },
+      ],
+    };
+
+    await fetch(webhookURL, {
+      method: "POST",
+      headers: {
+        "Content-Type": "application/json",
+      },
+      body: JSON.stringify(data),
+    });
+  };
+
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    toast.success("Message sent with success !");
-    setName("");
-    setEmail("");
-    setSubject("");
-    setMessage("");
+    sendToDiscord(name, email, subject, message).then((message: any) => {
+      toast.success("Message sent successfully");
+      setName("");
+      setEmail("");
+      setSubject("");
+      setMessage("");
+    });
   };
 
   return (
