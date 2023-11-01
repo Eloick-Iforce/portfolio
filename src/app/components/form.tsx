@@ -19,7 +19,7 @@ const FormComponent = () => {
   };
 
   return (
-    <div className="bg-primary p-8 ">
+    <div className="bg-primary p-8" id="contact">
       <h2 className="text-4xl font-bold">Contact me</h2>
       <div className="flex items-center justify-center">
         <form

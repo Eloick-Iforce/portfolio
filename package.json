@@ -17,6 +17,7 @@
     "react-dom": "18.2.0",
     "react-hot-toast": "^2.4.1",
     "react-icons": "^4.11.0",
+    "react-responsive": "^9.0.2",
     "react-spring": "^9.7.3",
     "react-textarea-autosize": "^8.5.3",
     "typeit-react": "^2.6.4",

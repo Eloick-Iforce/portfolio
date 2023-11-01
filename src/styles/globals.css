@@ -2,19 +2,22 @@
 @tailwind components;
 @tailwind utilities;
 
-@keyframes slide {
-  0% {
-    transform: translateX(0);
-  }
-  100% {
-    transform: translateX(-50%);
-  }
+html {
+  scrollbar-width: thin;
+  scrollbar-color: #2c0566 #df2935; /* Remplacez par les valeurs de couleur que vous utilisez pour bg-primary et le fond de votre page, respectivement */
 }
 
-.loop-slider {
-  animation: slide var(--duration) linear infinite;
+/* Pour les navigateurs WebKit */
+body::-webkit-scrollbar {
+  width: 12px;
 }
 
-.loop-slider.reverse {
-  animation-direction: reverse;
+body::-webkit-scrollbar-track {
+  background: #2c0566; /* Remplacez par la valeur de couleur que vous utilisez pour le fond de votre page */
+}
+
+body::-webkit-scrollbar-thumb {
+  background-color: #df2935; /* Remplacez par la valeur de couleur que vous utilisez pour bg-primary */
+  border-radius: 20px;
+  border: 3px solid #2c0566; /* Remplacez par la valeur de couleur que vous utilisez pour le fond de votre page */
 }
