@@ -1,8 +1,7 @@
-/* eslint-disable react/no-array-index-key */
-
 "use client";
 import { useState } from "react";
 import ProjectCard from "./ProjectCard";
+import data from "../../../public/data.json";
 
 type Data = {
   skills: string[];
@@ -17,8 +16,6 @@ type Data = {
   }[];
   technologies?: string[];
 };
-
-const data: Data = require("../../../public/data.json");
 
 const Projects = () => {
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
