@@ -68,7 +68,7 @@ function Navigation() {
         </>
       ) : (
         <>
-          <div className="flex gap-8">
+          <div className="mr-16 flex gap-8">
             <Link href="/">
               <p className="text-white">Home</p>
             </Link>
