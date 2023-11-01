@@ -1,6 +1,7 @@
 "use client";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
+import TextareaAutosize from "react-textarea-autosize";
 
 const FormComponent = () => {
   const [name, setName] = useState("");
@@ -31,7 +32,7 @@ const FormComponent = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="mt-2 block rounded border border-gray-300 p-2 text-black"
+              className="bg-primary mt-2 block w-96 border-b-4 border-white p-2 focus:outline-none"
             />
           </label>
           <label className="mb-4">
@@ -40,7 +41,7 @@ const FormComponent = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="mt-2 block rounded border border-gray-300 p-2 text-black"
+              className="bg-primary mt-2 block w-96 border-b-4 border-white p-2 focus:outline-none"
             />
           </label>
           <label className="mb-4">
@@ -49,22 +50,21 @@ const FormComponent = () => {
               type="text"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="mt-2 block rounded border border-gray-300 p-2 text-black"
+              className="bg-primary mt-2 block w-96 border-b-4 border-white p-2 focus:outline-none"
             />
           </label>
           <label className="mb-4">
             Message:
-            <input
-              type="text"
+            <TextareaAutosize
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="mt-2 block rounded border border-gray-300 p-2 text-black"
+              className="bg-primary mt-2 block w-96 resize-none border-b-4 border-white p-2 focus:outline-none"
             />
           </label>
           <input
             type="submit"
             value="Send"
-            className="hover:text-primary duration-900 flex cursor-pointer items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white"
+            className="hover:text-primary duration-900 w-96 cursor-pointer gap-4 rounded-lg border-4 border-white p-4 text-center text-white transition-colors hover:bg-white"
           />
         </form>
       </div>
