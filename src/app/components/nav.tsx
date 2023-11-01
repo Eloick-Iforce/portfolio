@@ -3,6 +3,7 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
+import { FaBars, FaTimes } from "react-icons/fa";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
@@ -30,22 +31,26 @@ function Navigation() {
 
   return (
     <nav
-      className={`fixed z-50 flex w-full justify-around p-4 transition-all duration-500 ${
+      className={`fixed z-50 w-full p-4 transition-all duration-500 ${
         isScrolled ? "bg-primary" : ""
-      }`}
+      } flex items-center justify-between`}
     >
+      <div className="text-xl font-bold">
+        Eloïck<span className="text-4xl text-green-500">.</span>fr
+      </div>
       {isSmallScreen ? (
         <>
-          <button
-            onClick={() => setIsOpen(!isOpen)}
-            className="flex flex-col justify-center"
-          >
-            <div className="mb-1.5 h-0.5 w-6 bg-white"></div>
-            <div className="mb-1.5 h-0.5 w-6 bg-white"></div>
-            <div className="h-0.5 w-6 bg-white"></div>
+          <button onClick={() => setIsOpen(!isOpen)}>
+            {isOpen ? (
+              <FaTimes className="text-6xl text-white" />
+            ) : (
+              <FaBars className="text-white" />
+            )}
           </button>
           {isOpen && (
-            <div className="bg-primary fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center">
+            <div className="bg-primary fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-16 text-4xl">
+              <button onClick={closeMenu}> Close </button>
+
               <Link href="/" onClick={closeMenu}>
                 <p className="text-white">Home</p>
               </Link>

@@ -4,20 +4,19 @@
 
 html {
   scrollbar-width: thin;
-  scrollbar-color: #2c0566 #df2935; /* Remplacez par les valeurs de couleur que vous utilisez pour bg-primary et le fond de votre page, respectivement */
+  scrollbar-color: #2c0566 #df2935;
 }
 
-/* Pour les navigateurs WebKit */
 body::-webkit-scrollbar {
   width: 12px;
 }
 
 body::-webkit-scrollbar-track {
-  background: #2c0566; /* Remplacez par la valeur de couleur que vous utilisez pour le fond de votre page */
+  background: #2c0566;
 }
 
 body::-webkit-scrollbar-thumb {
-  background-color: #df2935; /* Remplacez par la valeur de couleur que vous utilisez pour bg-primary */
+  background-color: #df2935;
   border-radius: 20px;
-  border: 3px solid #2c0566; /* Remplacez par la valeur de couleur que vous utilisez pour le fond de votre page */
+  border: 3px solid #2c0566;
 }
