@@ -68,6 +68,9 @@ const FormComponent = () => {
           />
         </form>
       </div>
+      <p className="mt-4 text-center">
+        Or send me a email at contact@eloick.fr
+      </p>
     </div>
   );
 };
