@@ -3,6 +3,7 @@ import Navigation from "./components/nav";
 import List from "./components/list";
 import Projects from "./components/projects";
 import FormComponent from "./components/form";
+
 import { Toaster } from "react-hot-toast";
 
 export default function HomePage() {

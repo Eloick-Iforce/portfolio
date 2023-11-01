@@ -1,9 +1,8 @@
 /* eslint-disable */
 "use client";
 
-import React from "react";
-
 import TypeIt from "typeit-react";
+import { FaArrowDown } from "react-icons/fa";
 
 function Header() {
   return (
@@ -31,13 +30,13 @@ function Header() {
       </h2>
       <div className="mt-10">
         <button
-          className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white"
+          className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 font-bold text-white transition-colors hover:bg-white"
           onClick={() => {
             const element = document.getElementById("about");
             if (element) element.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          See more
+          See more <FaArrowDown />
         </button>
       </div>
     </header>
