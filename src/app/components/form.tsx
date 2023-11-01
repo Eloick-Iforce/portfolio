@@ -1,3 +1,5 @@
+/*eslint-disable*/
+
 "use client";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
@@ -55,7 +57,7 @@ const FormComponent = () => {
         "Content-Type": "application/json",
       },
       body: JSON.stringify(data),
-    });
+    }).catch((error) => console.error("Error:", error));
   };
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
