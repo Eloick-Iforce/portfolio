@@ -1,11 +1,7 @@
-/*eslint-disable*/
-
 "use client";
 import { useState } from "react";
 import { toast } from "react-hot-toast";
 import TextareaAutosize from "react-textarea-autosize";
-
-declare let Email: any;
 
 const FormComponent = () => {
   const [name, setName] = useState("");
@@ -13,12 +9,7 @@ const FormComponent = () => {
   const [subject, setSubject] = useState("");
   const [message, setMessage] = useState("");
 
-  const sendToDiscord = async (
-    name: string,
-    email: string,
-    subject: string,
-    message: string,
-  ) => {
+  const sendToDiscord = async () => {
     const webhookURL =
       "https://discord.com/api/webhooks/1169601255862194228/dWUULuXuHlJjgH1KpWkzCsINr7COtFJlJ0YD1ejAzJ5JjwgNmH0OGu1tPfbOeAeDoqkw";
     const data = {
@@ -62,7 +53,7 @@ const FormComponent = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    sendToDiscord(name, email, subject, message).then((message: any) => {
+    sendToDiscord().then(() => {
       toast.success("Message sent successfully");
       setName("");
       setEmail("");
@@ -82,6 +73,7 @@ const FormComponent = () => {
           <label className="mb-4">
             Name:
             <input
+              required
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
@@ -91,6 +83,7 @@ const FormComponent = () => {
           <label className="mb-4">
             Mail:
             <input
+              required
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
@@ -100,6 +93,7 @@ const FormComponent = () => {
           <label className="mb-4">
             Subject:
             <input
+              required
               type="text"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
@@ -109,6 +103,7 @@ const FormComponent = () => {
           <label className="mb-4">
             Message:
             <TextareaAutosize
+              required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
               className="bg-primary mt-2 block w-96 resize-none border-b-4 border-white p-2 focus:outline-none"
