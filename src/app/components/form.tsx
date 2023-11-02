@@ -53,13 +53,17 @@ const FormComponent = () => {
 
   const handleSubmit = (e: { preventDefault: () => void }) => {
     e.preventDefault();
-    sendToDiscord().then(() => {
-      toast.success("Message sent successfully");
-      setName("");
-      setEmail("");
-      setSubject("");
-      setMessage("");
-    });
+    sendToDiscord()
+      .then(() => {
+        toast.success("Message sent successfully");
+        setName("");
+        setEmail("");
+        setSubject("");
+        setMessage("");
+      })
+      .catch((error) => {
+        console.error("Error:", error);
+      });
   };
 
   return (
