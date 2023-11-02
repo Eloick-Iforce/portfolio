@@ -3,6 +3,7 @@
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
+import Image from "next/image";
 type ProjectCardProps = {
   project: {
     id: number;
@@ -26,11 +27,14 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
       className="card my-4 w-[30rem] overflow-hidden rounded-lg bg-[#2C4251] shadow-lg "
       data-aos="fade-up"
     >
-      <img
-        className="h-96 w-full object-cover"
-        src={project.image}
-        alt={project.name}
-      />
+      <div className="relative h-96">
+        <Image
+          src={project.image}
+          alt={project.name}
+          layout="fill"
+          objectFit="cover"
+        />
+      </div>
       <div className="p-4">
         <h2 className="text-2xl font-bold">{project.name}</h2>
         <p className="mt-2 text-gray-300">{project.description}</p>
