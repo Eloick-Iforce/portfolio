@@ -4,6 +4,7 @@ import AOS from "aos";
 import "aos/dist/aos.css";
 import { useEffect } from "react";
 import Image from "next/image";
+
 type ProjectCardProps = {
   project: {
     id: number;
@@ -16,13 +17,14 @@ type ProjectCardProps = {
   };
 };
 
-const ProjectCard = ({ project }: ProjectCardProps) => (
+const ProjectCard = ({ project }: ProjectCardProps) => {
   useEffect(() => {
     AOS.init({
       duration: 1000,
     });
-  }, []),
-  (
+  }, []);
+
+  return (
     <div
       className="card my-4 w-[30rem] overflow-hidden rounded-lg bg-[#2C4251] shadow-lg "
       data-aos="fade-up"
@@ -67,7 +69,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => (
         </div>
       </div>
     </div>
-  )
-);
+  );
+};
 
 export default ProjectCard;
