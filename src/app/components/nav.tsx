@@ -17,7 +17,7 @@ function Navigation() {
     setIsOpen(false);
   };
 
-  const changeLanguage = (lang: any) => {
+  const changeLanguage = (lang: string) => {
     setLanguage(lang);
     setIsLanguageMenuOpen(false);
   };

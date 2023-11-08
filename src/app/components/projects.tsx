@@ -3,20 +3,6 @@ import { useState } from "react";
 import ProjectCard from "./ProjectCard";
 import data from "../../../public/data.json";
 
-type Data = {
-  skills: string[];
-  projects: {
-    id: number;
-    name: string;
-    description: string;
-    image: string;
-    url: string;
-    technologies: string[];
-    git?: string;
-  }[];
-  technologies?: string[];
-};
-
 const Projects = () => {
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
 
@@ -27,7 +13,7 @@ const Projects = () => {
         <div className="my-4">
           {data.technologies && (
             <select
-              className="bg-primary rounded-md px-4 py-2 font-bold text-white"
+              className="rounded-md bg-primary px-4 py-2 font-bold text-white"
               onChange={(e) => setSelectedTech(e.target.value)}
             >
               <option value="">All</option>
