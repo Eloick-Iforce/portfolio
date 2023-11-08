@@ -3,15 +3,23 @@
 import { useState, useEffect } from "react";
 import { useMediaQuery } from "react-responsive";
 import Link from "next/link";
-import { FaBars, FaTimes } from "react-icons/fa";
+import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
+import { FlagIcon } from "react-flag-kit";
 
 function Navigation() {
   const [isOpen, setIsOpen] = useState(false);
   const [isScrolled, setIsScrolled] = useState(false);
+  const [language, setLanguage] = useState("EN");
+  const [isLanguageMenuOpen, setIsLanguageMenuOpen] = useState(false);
   const isSmallScreen = useMediaQuery({ query: "(max-width: 768px)" });
 
   const closeMenu = () => {
     setIsOpen(false);
+  };
+
+  const changeLanguage = (lang: any) => {
+    setLanguage(lang);
+    setIsLanguageMenuOpen(false);
   };
 
   useEffect(() => {
@@ -48,7 +56,7 @@ function Navigation() {
             )}
           </button>
           {isOpen && (
-            <div className="bg-primary fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-16 text-4xl">
+            <div className="fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-16 bg-primary text-4xl">
               <button onClick={closeMenu}> Close </button>
               <Link href="#about" onClick={closeMenu}>
                 <p className="text-white">About</p>
@@ -64,7 +72,7 @@ function Navigation() {
         </>
       ) : (
         <>
-          <div className="mr-16 flex gap-8">
+          <div className="mr-16 flex items-center gap-8">
             <Link href="#about">
               <p className="text-white">About</p>
             </Link>
@@ -74,6 +82,53 @@ function Navigation() {
             <Link href="#contact">
               <p className="text-white">Contact</p>
             </Link>
+            <div className="relative inline-block text-left">
+              <div>
+                <button
+                  type="button"
+                  onClick={() => setIsLanguageMenuOpen(!isLanguageMenuOpen)}
+                  className="inline-flex w-full justify-center rounded-md bg-white px-4 py-2 text-sm font-medium text-gray-700 hover:bg-gray-50 focus:outline-none"
+                >
+                  {language} <FaCaretDown />
+                </button>
+              </div>
+
+              {isLanguageMenuOpen && (
+                <div className="absolute right-0 mt-2 w-56 origin-top-right rounded-md bg-white shadow-lg ring-1 ring-black ring-opacity-5">
+                  <div
+                    className="py-1"
+                    role="menu"
+                    aria-orientation="vertical"
+                    aria-labelledby="options-menu"
+                  >
+                    <a
+                      href="#"
+                      onClick={() => changeLanguage("EN")}
+                      className="flex gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                    >
+                      <FlagIcon code="GB" size={32} /> English
+                    </a>
+                    <a
+                      href="#"
+                      onClick={() => changeLanguage("FR")}
+                      className="flex gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                    >
+                      <FlagIcon code="FR" size={32} /> Français
+                    </a>
+                    <a
+                      href="#"
+                      onClick={() => changeLanguage("DE")}
+                      className="flex gap-2 px-4 py-2 text-sm text-gray-700 hover:bg-gray-100"
+                      role="menuitem"
+                    >
+                      <FlagIcon code="DE" size={32} /> Deutsch
+                    </a>
+                  </div>
+                </div>
+              )}
+            </div>
           </div>
         </>
       )}
