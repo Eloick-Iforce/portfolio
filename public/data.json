@@ -14,7 +14,7 @@
     {
       "id": 1,
       "name": "Crimsonland",
-      "description": "Crimson land is a e-commerce website where you can 'buy' goodies from Konosuba, it's a school project.",
+      "description": "Dive into the captivating world of Crimsonland, an e-commerce website where you can acquire treasures inspired by the Konosuba universe. This school project seamlessly blends creativity with technical expertise, crafted using Twig, CSS, and PHP technologies.",
       "image": "/img/crimsonland.png",
       "url": "https://crimsonlands.mickisze.etu.mmi-unistra.fr/",
       "technologies": ["Twig", "CSS", "PHP"]
@@ -22,7 +22,7 @@
     {
       "id": 2,
       "name": "Webdoc : Electricity",
-      "description": "This project was a webdoc who talk about electricity, we have made it in a paternship with the CUEJ of Strasbourg, we where in a group of 5 people and use agile method to work, it's a school project.",
+      "description": "Embark on an interactive journey through our web documentary on electricity, created in partnership with CUEJ Strasbourg. Developed using agile methodologies and a team of five, this project presents electricity in an innovative light, employing Twig, CSS, JavaScript, and PHP technologies.",
       "image": "/img/cuej.png",
       "url": "https://www.cuej.info/mini-sites/electricite/index.php",
       "git": "https://github.com/Eloick-Iforce/sae301",
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Water informations",
-      "description": "Was a school project for learn more about ChartJs and Tailwind, we have to show some informations about water in the world.",
+      "description": "Explore our educational project showcasing valuable water-related data from around the world. Using ChartJs, Tailwind, and JavaScript technologies, we present insightful information in a visually appealing format.",
       "image": "/img/eau.png",
       "url": "https://sae303.mickisze.etu.mmi-unistra.fr/",
       "git": "https://github.com/Eloick-Iforce/SAE-303",
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "name": "Nomad Explorer",
-      "description": "Nomad Explorer was a project about traveling around the world and share some tips, we have to use GoogleMap API to show a map with some markers and a list of different places, it's a school project.",
+      "description": "Nomad Explorer invites you to embark on a virtual journey, exploring the world through travelers' shared experiences. Utilizing the Google Maps API, this educational project highlights unique locations through interactive markers and a detailed list. Symfony, Tailwind, and Google API technologies come together to create this immersive experience.",
       "image": "/img/nomad.png",
       "url": "https://nomadexplorer.pointud.etu.mmi-unistra.fr/",
       "technologies": ["Symfony", "Tailwind", "Google API"]
@@ -48,7 +48,7 @@
     {
       "id": 5,
       "name": "Hair App",
-      "description": "Was a personal project to learn more about react and nextjs who show you a list of different haidress in France who have a pun with their name.",
+      "description": "Hair App is a personal endeavor showcasing humorous hair salons in France. Developed using React, Tailwind, JavaScript, and Next.js technologies, this project offers an interactive and entertaining experience.",
       "image": "/img/hair.png",
       "url": "https://hair-app-chi.vercel.app/",
       "git": "https://github.com/Eloick-Iforce/hair-app",
