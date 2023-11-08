@@ -30,7 +30,7 @@ function Header() {
       </h2>
       <div className="mt-10">
         <button
-          className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 font-bold text-white transition-colors hover:bg-white"
+          className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 font-bold text-white transition-colors hover:bg-white hover:text-primary"
           onClick={() => {
             const element = document.getElementById("about");
             if (element) element.scrollIntoView({ behavior: "smooth" });
