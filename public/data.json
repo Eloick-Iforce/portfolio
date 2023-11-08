@@ -14,7 +14,7 @@
     {
       "id": 1,
       "name": "Crimsonland",
-      "description": "This is project 1",
+      "description": "Crimson land is a e-commerce website where you can 'buy' goodies from Konosuba, it's a school project.",
       "image": "/img/crimsonland.png",
       "url": "https://crimsonlands.mickisze.etu.mmi-unistra.fr/",
       "technologies": ["Twig", "CSS", "PHP"]
@@ -22,7 +22,7 @@
     {
       "id": 2,
       "name": "Webdoc : Electricity",
-      "description": "This is project 1",
+      "description": "This project was a webdoc who talk about electricity, we have made it in a paternship with the CUEJ of Strasbourg, we where in a group of 5 people and use agile method to work, it's a school project.",
       "image": "/img/cuej.png",
       "url": "https://www.cuej.info/mini-sites/electricite/index.php",
       "git": "https://github.com/Eloick-Iforce/sae301",
@@ -31,7 +31,7 @@
     {
       "id": 3,
       "name": "Water informations",
-      "description": "This is project 1",
+      "description": "Was a school project for learn more about ChartJs and Tailwind, we have to show some informations about water in the world.",
       "image": "/img/eau.png",
       "url": "https://sae303.mickisze.etu.mmi-unistra.fr/",
       "git": "https://github.com/Eloick-Iforce/SAE-303",
@@ -40,7 +40,7 @@
     {
       "id": 4,
       "name": "Nomad Explorer",
-      "description": "This is project 1",
+      "description": "Nomad Explorer was a project about traveling around the world and share some tips, we have to use GoogleMap API to show a map with some markers and a list of different places, it's a school project.",
       "image": "/img/nomad.png",
       "url": "https://nomadexplorer.pointud.etu.mmi-unistra.fr/",
       "technologies": ["Symfony", "Tailwind", "Google API"]
@@ -48,7 +48,7 @@
     {
       "id": 5,
       "name": "Hair App",
-      "description": "This is project 1",
+      "description": "Was a personal project to learn more about react and nextjs who show you a list of different haidress in France who have a pun with their name.",
       "image": "/img/hair.png",
       "url": "https://hair-app-chi.vercel.app/",
       "git": "https://github.com/Eloick-Iforce/hair-app",
