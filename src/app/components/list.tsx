@@ -63,13 +63,6 @@ const List = () => {
         </p>
         <div className="mt-24 flex flex-col gap-4 sm:flex-row sm:gap-24">
           <button
-            className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white hover:text-primary"
-            onClick={() => window.open("https://your-cv-link", "_blank")}
-            data-aos="fade-up"
-          >
-            <FaFilePdf /> CV
-          </button>
-          <button
             data-aos="fade-up"
             className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white hover:text-primary "
             onClick={() =>
