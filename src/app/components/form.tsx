@@ -81,7 +81,7 @@ const FormComponent = () => {
               type="text"
               value={name}
               onChange={(e) => setName(e.target.value)}
-              className="bg-primary mt-2 block w-96 border-b-4 border-white p-2 focus:outline-none"
+              className="mt-2 block w-64 border-b-4 border-white bg-primary p-2 focus:outline-none md:w-96"
             />
           </label>
           <label className="mb-4">
@@ -91,7 +91,7 @@ const FormComponent = () => {
               type="email"
               value={email}
               onChange={(e) => setEmail(e.target.value)}
-              className="bg-primary mt-2 block w-96 border-b-4 border-white p-2 focus:outline-none"
+              className="mt-2 block w-64 border-b-4 border-white bg-primary p-2 focus:outline-none md:w-96"
             />
           </label>
           <label className="mb-4">
@@ -101,7 +101,7 @@ const FormComponent = () => {
               type="text"
               value={subject}
               onChange={(e) => setSubject(e.target.value)}
-              className="bg-primary mt-2 block w-96 border-b-4 border-white p-2 focus:outline-none"
+              className="mt-2 block w-64 border-b-4 border-white bg-primary p-2 focus:outline-none md:w-96"
             />
           </label>
           <label className="mb-4">
@@ -110,13 +110,13 @@ const FormComponent = () => {
               required
               value={message}
               onChange={(e) => setMessage(e.target.value)}
-              className="bg-primary mt-2 block w-96 resize-none border-b-4 border-white p-2 focus:outline-none"
+              className="mt-2 block w-64 resize-none border-b-4 border-white bg-primary p-2 focus:outline-none md:w-96"
             />
           </label>
           <input
             type="submit"
             value="Send"
-            className="hover:text-primary duration-900 w-96 cursor-pointer gap-4 rounded-lg border-4 border-white p-4 text-center text-white transition-colors hover:bg-white"
+            className="duration-900 w-64 cursor-pointer gap-4 rounded-lg border-4 border-white p-4 text-center text-white transition-colors hover:bg-white hover:text-primary md:w-96"
           />
         </form>
       </div>
