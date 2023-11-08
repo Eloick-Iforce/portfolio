@@ -63,7 +63,7 @@ const List = () => {
         </p>
         <div className="mt-24 flex flex-col gap-4 sm:flex-row sm:gap-24">
           <button
-            className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white"
+            className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white hover:text-primary"
             onClick={() => window.open("https://your-cv-link", "_blank")}
             data-aos="fade-up"
           >
@@ -71,16 +71,19 @@ const List = () => {
           </button>
           <button
             data-aos="fade-up"
-            className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white "
+            className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white hover:text-primary "
             onClick={() =>
-              window.open("https://www.linkedin.com/in/your-linkedin", "_blank")
+              window.open(
+                "https://www.linkedin.com/in/elo%C3%AFck-mickisz-227063204/",
+                "_blank",
+              )
             }
           >
             <FaLinkedin /> LinkedIn
           </button>
           <button
             data-aos="fade-up"
-            className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white"
+            className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white hover:text-primary"
             onClick={() =>
               window.open("https://github.com/Eloick-Iforce", "_blank")
             }
@@ -89,7 +92,7 @@ const List = () => {
           </button>
           <button
             data-aos="fade-up"
-            className="hover:text-primary duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white"
+            className="duration-900 flex items-center gap-4 rounded-lg border-4 border-white p-4 text-white transition-colors hover:bg-white hover:text-primary"
             onClick={() =>
               window.open("https://iforceeloick.itch.io/", "_blank")
             }
