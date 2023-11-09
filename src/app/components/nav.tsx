@@ -7,7 +7,7 @@ import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
 import { FlagIcon } from "react-flag-kit";
 import LanguageContext from "./LanguageContext";
 import trad from "../../../public/trad.json";
-import { Translations } from "../../../public/trad";
+import type { Translations } from "../../../public/trad";
 const typedTrad = trad as Translations;
 
 function Navigation() {

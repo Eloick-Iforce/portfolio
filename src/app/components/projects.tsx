@@ -1,15 +1,22 @@
 "use client";
-import { useState } from "react";
+import { useState,useContext } from "react";
 import ProjectCard from "./ProjectCard";
+import LanguageContext from "./LanguageContext";
 import data from "../../../public/data.json";
+import trad from "../../../public/trad.json";
+import type { Translations } from "../../../public/trad";
+const typedTrad = trad as Translations;
 
 const Projects = () => {
+  const { language } = useContext(LanguageContext);
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
 
   return (
     <div className="my-16 p-8" id="projects">
       <div className="flex items-center justify-between">
-        <h2 className="mb-4 text-4xl font-bold">Projects</h2>
+        <h2 className="mb-4 text-4xl font-bold">
+          {typedTrad[language as keyof Translations]["projectHeading"]}
+        </h2>
         <div className="my-4">
           {data.technologies && (
             <select

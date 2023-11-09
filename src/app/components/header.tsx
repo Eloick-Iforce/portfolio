@@ -6,7 +6,7 @@ import { FaArrowDown } from "react-icons/fa";
 import { useContext } from "react";
 import LanguageContext from "./LanguageContext";
 import trad from "../../../public/trad.json";
-import { Translations } from "../../../public/trad";
+import type { Translations } from "../../../public/trad";
 const typedTrad = trad as Translations;
 
 function Header() {
