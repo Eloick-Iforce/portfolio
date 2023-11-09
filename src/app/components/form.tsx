@@ -4,7 +4,7 @@ import { toast } from "react-hot-toast";
 import TextareaAutosize from "react-textarea-autosize";
 import trad from "../../../public/trad.json";
 import LanguageContext from "./LanguageContext";
-import { Translations } from "../../../public/trad";
+import type { Translations } from "../../../public/trad";
 const typedTrad = trad as Translations;
 
 const FormComponent = () => {
