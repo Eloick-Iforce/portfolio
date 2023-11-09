@@ -1,4 +1,4 @@
-/*eslint-disable*/
+// @ts-ignore
 "use client";
 import { useState, useContext } from "react";
 import { toast } from "react-hot-toast";
