@@ -24,4 +24,4 @@ type Translations = {
   [key in TranslationKeys]: TranslationContent;
 };
 
-export type { TranslationKeys, TranslationContent, Translations };
+export type { Translations };
