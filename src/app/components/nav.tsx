@@ -7,6 +7,8 @@ import { FaBars, FaTimes, FaCaretDown } from "react-icons/fa";
 import { FlagIcon } from "react-flag-kit";
 import LanguageContext from "./LanguageContext";
 import trad from "../../../public/trad.json";
+import { Translations } from "../../../public/trad";
+const typedTrad = trad as Translations;
 
 function Navigation() {
   const { language, setLanguage } = useContext(LanguageContext);
@@ -118,13 +120,19 @@ function Navigation() {
               <div className="fixed left-0 top-0 flex h-full w-full flex-col items-center justify-center gap-16 bg-primary text-4xl">
                 <button onClick={closeMenu}> Close </button>
                 <Link href="#about">
-                  <p className="text-white">{trad[language].about}</p>
+                  <p className="text-white">
+                    {typedTrad[language as keyof Translations]["about"]}
+                  </p>
                 </Link>
                 <Link href="#projects">
-                  <p className="text-white">{trad[language].projects}</p>
+                  <p className="text-white">
+                    {typedTrad[language as keyof Translations]["projects"]}
+                  </p>
                 </Link>
                 <Link href="#contact">
-                  <p className="text-white">{trad[language].contact}</p>
+                  <p className="text-white">
+                    {typedTrad[language as keyof Translations]["contact"]}
+                  </p>
                 </Link>
               </div>
             )}
@@ -133,13 +141,19 @@ function Navigation() {
           <>
             <div className="mr-16 flex items-center gap-8">
               <Link href="#about">
-                <p className="text-white">{trad[language].about}</p>
+                <p className="text-white">
+                  {typedTrad[language as keyof Translations]["about"]}
+                </p>
               </Link>
               <Link href="#projects">
-                <p className="text-white">{trad[language].projects}</p>
+                <p className="text-white">
+                  {typedTrad[language as keyof Translations]["projects"]}
+                </p>
               </Link>
               <Link href="#contact">
-                <p className="text-white">{trad[language].contact}</p>
+                <p className="text-white">
+                  {typedTrad[language as keyof Translations]["contact"]}
+                </p>
               </Link>
             </div>
           </>
