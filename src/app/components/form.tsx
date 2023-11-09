@@ -4,6 +4,8 @@ import { toast } from "react-hot-toast";
 import TextareaAutosize from "react-textarea-autosize";
 import trad from "../../../public/trad.json";
 import LanguageContext from "./LanguageContext";
+import { Translations } from "../../../public/trad";
+const typedTrad = trad as Translations;
 
 const FormComponent = () => {
   const { language } = useContext(LanguageContext);
@@ -71,14 +73,14 @@ const FormComponent = () => {
 
   return (
     <div className="bg-primary p-8" id="contact">
-      <h2 className="text-4xl font-bold">{trad[language].contactMe}</h2>
+      <h2 className="text-4xl font-bold">{typedTrad[language].contactMe}</h2>
       <div className="flex items-center justify-center">
         <form
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col items-center justify-center"
         >
           <label className="mb-4">
-            {trad[language].champform1}
+            {typedTrad[language].champform1}
             <input
               required
               type="text"
@@ -88,7 +90,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            {trad[language].champform2}
+            {typedTrad[language].champform2}
             <input
               required
               type="email"
@@ -98,7 +100,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            {trad[language].champform3}
+            {typedTrad[language].champform3}
             <input
               required
               type="text"
@@ -108,7 +110,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            {trad[language].champform4}
+            {typedTrad[language].champform4}
             <TextareaAutosize
               required
               value={message}
@@ -118,12 +120,12 @@ const FormComponent = () => {
           </label>
           <input
             type="submit"
-            value={trad[language].buttonform}
+            value={typedTrad[language].buttonform}
             className="duration-900 w-64 cursor-pointer gap-4 rounded-lg border-4 border-white p-4 text-center text-white transition-colors hover:bg-white hover:text-primary md:w-96"
           />
         </form>
       </div>
-      <p className="mt-4 text-center">{trad[language].email}</p>
+      <p className="mt-4 text-center">{typedTrad[language].email}</p>
     </div>
   );
 };
