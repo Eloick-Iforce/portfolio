@@ -15,9 +15,9 @@
       "id": 1,
       "name": "Crimsonland",
       "description": {
-        "en": "Dive into the captivating world of Crimsonland, an e-commerce website where you can acquire treasures inspired by the Konosuba universe. This school project seamlessly blends creativity with technical expertise, crafted using Twig, CSS, and PHP technologies.",
-        "fr": "Plongez dans l'univers captivant de Crimsonland, un site web de commerce électronique où vous pouvez acquérir des trésors inspirés de l'univers de Konosuba. Ce projet scolaire mêle parfaitement créativité et expertise technique, réalisé avec les technologies Twig, CSS et PHP.",
-        "de": "Tauchen Sie ein in die faszinierende Welt von Crimsonland, einer E-Commerce-Website, auf der Sie Schätze erwerben können, die vom Konosuba-Universum inspiriert sind. Dieses Schulprojekt vereint Kreativität nahtlos mit technischer Expertise und wurde mit den Technologien Twig, CSS und PHP entwickelt."
+        "EN": "Dive into the captivating world of Crimsonland, an e-commerce website where you can acquire treasures inspired by the Konosuba universe. This school project seamlessly blends creativity with technical expertise, crafted using Twig, CSS, and PHP technologies.",
+        "FR": "Plongez dans l'univers captivant de Crimsonland, un site web de commerce électronique où vous pouvez acquérir des trésors inspirés de l'univers de Konosuba. Ce projet scolaire mêle parfaitement créativité et expertise technique, réalisé avec les technologies Twig, CSS et PHP.",
+        "DE": "Tauchen Sie ein in die faszinierende Welt von Crimsonland, einer E-Commerce-Website, auf der Sie Schätze erwerben können, die vom Konosuba-Universum inspiriert sind. Dieses Schulprojekt vereint Kreativität nahtlos mit technischer Expertise und wurde mit den Technologien Twig, CSS und PHP entwickelt."
       },
       "image": "/img/crimsonland.png",
       "url": "https://crimsonlands.mickisze.etu.mmi-unistra.fr/",
@@ -27,9 +27,9 @@
       "id": 2,
       "name": "Webdoc : Electricity",
       "description": {
-        "en": "Embark on an interactive journey through our web documentary on electricity, created in partnership with CUEJ Strasbourg. Developed using agile methodologies and a team of five, this project presents electricity in an innovative light, employing Twig, CSS, JavaScript, and PHP technologies.",
-        "fr": "Embarquez pour un voyage interactif à travers notre web documentaire sur l'électricité, créé en partenariat avec le CUEJ Strasbourg. Développé en utilisant des méthodologies agiles et une équipe de cinq personnes, ce projet présente l'électricité sous un jour innovant, en utilisant les technologies Twig, CSS, JavaScript et PHP.",
-        "de": "Begib dich auf eine interaktive Reise durch unser Webdokumentarfilm über Elektrizität, das in Zusammenarbeit mit CUEJ Strasbourg erstellt wurde. Dieses Projekt präsentiert Elektrizität auf innovative Weise und wurde mit agilen Methoden und einem Team von fünf Personen entwickelt. Es verwendet die Technologien Twig, CSS, JavaScript und PHP."
+        "EN": "Embark on an interactive journey through our web documentary on electricity, created in partnership with CUEJ Strasbourg. Developed using agile methodologies and a team of five, this project presents electricity in an innovative light, employing Twig, CSS, JavaScript, and PHP technologies.",
+        "FR": "Embarquez pour un voyage interactif à travers notre web documentaire sur l'électricité, créé en partenariat avec le CUEJ Strasbourg. Développé en utilisant des méthodologies agiles et une équipe de cinq personnes, ce projet présente l'électricité sous un jour innovant, en utilisant les technologies Twig, CSS, JavaScript et PHP.",
+        "DE": "Begib dich auf eine interaktive Reise durch unser Webdokumentarfilm über Elektrizität, das in Zusammenarbeit mit CUEJ Strasbourg erstellt wurde. Dieses Projekt präsentiert Elektrizität auf innovative Weise und wurde mit agilen Methoden und einem Team von fünf Personen entwickelt. Es verwendet die Technologien Twig, CSS, JavaScript und PHP."
       },
       "image": "/img/cuej.png",
       "url": "https://www.cuej.info/mini-sites/electricite/index.php",
@@ -40,9 +40,9 @@
       "id": 3,
       "name": "Water informations",
       "description": {
-        "en": "Explore our educational project showcasing valuable water-related data from around the world. Using ChartJs, Tailwind, and JavaScript technologies, we present insightful information in a visually appealing format.",
-        "fr": "Explorez notre projet éducatif présentant des données précieuses sur l'eau du monde entier. En utilisant les technologies ChartJs, Tailwind et JavaScript, nous présentons des informations perspicaces de manière visuellement attrayante.",
-        "de": "Entdecken Sie unser Bildungsprojekt, das wertvolle weltweite Wasserdaten präsentiert. Mit den Technologien ChartJs, Tailwind und JavaScript präsentieren wir aufschlussreiche Informationen in einem visuell ansprechenden Format."
+        "EN": "Explore our educational project showcasing valuable water-related data from around the world. Using ChartJs, Tailwind, and JavaScript technologies, we present insightful information in a visually appealing format.",
+        "FR": "Explorez notre projet éducatif présentant des données précieuses sur l'eau du monde entier. En utilisant les technologies ChartJs, Tailwind et JavaScript, nous présentons des informations perspicaces de manière visuellement attrayante.",
+        "DE": "Entdecken Sie unser Bildungsprojekt, das wertvolle weltweite Wasserdaten präsentiert. Mit den Technologien ChartJs, Tailwind und JavaScript präsentieren wir aufschlussreiche Informationen in einem visuell ansprechenden Format."
       },
       "image": "/img/eau.png",
       "url": "https://sae303.mickisze.etu.mmi-unistra.fr/",
@@ -53,9 +53,9 @@
       "id": 4,
       "name": "Nomad Explorer",
       "description": {
-        "en": "Nomad Explorer invites you to embark on a virtual journey, exploring the world through travelers' shared experiences. Utilizing the Google Maps API, this educational project highlights unique locations through interactive markers and a detailed list. Symfony, Tailwind, and Google API technologies come together to create this immersive experience.",
-        "fr": "Nomad Explorer vous invite à embarquer pour un voyage virtuel, explorant le monde à travers les expériences partagées des voyageurs. En utilisant l'API Google Maps, ce projet éducatif met en avant des lieux uniques grâce à des marqueurs interactifs et une liste détaillée. Les technologies Symfony, Tailwind et Google API se combinent pour créer cette expérience immersive.",
-        "de": "Nomad Explorer lädt Sie ein, sich auf eine virtuelle Reise zu begeben und die Welt durch die gemeinsamen Erfahrungen der Reisenden zu erkunden. Unter Verwendung der Google Maps API hebt dieses Bildungsprojekt einzigartige Orte durch interaktive Marker und eine detaillierte Liste hervor. Die Technologien Symfony, Tailwind und Google API kommen zusammen, um dieses immersive Erlebnis zu schaffen."
+        "EN": "Nomad Explorer invites you to embark on a virtual journey, exploring the world through travelers' shared experiences. Utilizing the Google Maps API, this educational project highlights unique locations through interactive markers and a detailed list. Symfony, Tailwind, and Google API technologies come together to create this immersive experience.",
+        "FR": "Nomad Explorer vous invite à embarquer pour un voyage virtuel, explorant le monde à travers les expériences partagées des voyageurs. En utilisant l'API Google Maps, ce projet éducatif met en avant des lieux uniques grâce à des marqueurs interactifs et une liste détaillée. Les technologies Symfony, Tailwind et Google API se combinent pour créer cette expérience immersive.",
+        "DE": "Nomad Explorer lädt Sie ein, sich auf eine virtuelle Reise zu begeben und die Welt durch die gemeinsamen Erfahrungen der Reisenden zu erkunden. Unter Verwendung der Google Maps API hebt dieses Bildungsprojekt einzigartige Orte durch interaktive Marker und eine detaillierte Liste hervor. Die Technologien Symfony, Tailwind und Google API kommen zusammen, um dieses immersive Erlebnis zu schaffen."
       },
       "image": "/img/nomad.png",
       "url": "https://nomadexplorer.pointud.etu.mmi-unistra.fr/",
@@ -65,9 +65,9 @@
       "id": 5,
       "name": "Hair App",
       "description": {
-        "en": "Hair App is a personal project showcasing humorous hair salons in France. Developed using React, Tailwind, JavaScript, and Next.js technologies, this project offers an interactive and entertaining experience.",
-        "fr": "Hair App est un projet personnelle présentant des salons de coiffure humoristiques en France. Développé avec les technologies React, Tailwind, JavaScript et Next.js, ce projet offre une expérience interactive et divertissante.",
-        "de": "Hair App ist ein persönliches Projekt, das humorvolle Friseursalons in Frankreich präsentiert. Entwickelt mit den Technologien React, Tailwind, JavaScript und Next.js, bietet dieses Projekt eine interaktive und unterhaltsame Erfahrung."
+        "EN": "Hair App is a personal project showcasing humorous hair salons in France. Developed using React, Tailwind, JavaScript, and Next.js technologies, this project offers an interactive and entertaining experience.",
+        "FR": "Hair App est un projet personnelle présentant des salons de coiffure humoristiques en France. Développé avec les technologies React, Tailwind, JavaScript et Next.js, ce projet offre une expérience interactive et divertissante.",
+        "DE": "Hair App ist ein persönliches Projekt, das humorvolle Friseursalons in Frankreich präsentiert. Entwickelt mit den Technologien React, Tailwind, JavaScript und Next.js, bietet dieses Projekt eine interaktive und unterhaltsame Erfahrung."
       },
       "image": "/img/hair.png",
       "url": "https://hair-app-chi.vercel.app/",

@@ -4,6 +4,7 @@ import ProjectCard from "./ProjectCard";
 import data from "../../../public/data.json";
 
 const Projects = () => {
+  
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
 
   return (

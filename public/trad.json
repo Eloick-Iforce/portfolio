@@ -1,38 +1,59 @@
 {
-  "fr": {
+  "FR": {
     "about": "À propos",
     "projects": "Projets",
     "contact": "Contact",
     "greeting": "Bonjour, je suis Eloïck",
+    "iam": "un",
+    "buttonheader": "Voir plus",
     "description1": "J'aime créer des choses pour le web et les jeux vidéo",
     "description2": "Toujours à la recherche de nouveaux défis et de nouvelles technologies !",
-    "description3": "Étudiant à Haguenau en BUT Création Numérique (Métier du Multimédia et de l'Internet)",
+    "description3": "Étudiant à Haguenau en BUT MMI (Métier du Multimédia et de l'Internet)",
     "projectHeading": "Projets",
     "contactMe": "Contactez-moi",
+    "champform1": "Nom",
+    "champform2": "Email",
+    "champform3": "Sujet",
+    "champform4": "Message",
+    "buttonform": "Envoyer",
     "email": "Ou envoyez-moi un email à contact@eloick.fr"
   },
-  "en": {
+  "EN": {
     "about": "About",
     "projects": "Projects",
     "contact": "Contact",
     "greeting": "Hello, I'm Eloïck",
+    "iam": "a",
+    "buttonheader": "See more",
     "description1": "I like to create things for the web and video games",
     "description2": "Always looking for new challenges and new technologies!",
-    "description3": "Student at Haguenau in Digital Creation (Multimedia and Internet Profession)",
+    "description3": "Student at Haguenau in BUT MMI (Multimedia and Internet Profession)",
     "projectHeading": "Projects",
     "contactMe": "Contact me",
+    "champform1": "Name",
+    "champform2": "Email",
+    "champform3": "Subject",
+    "champform4": "Message",
+    "buttonform": "Send",
     "email": "Or send me an email at contact@eloick.fr"
   },
-  "de": {
+  "DE": {
     "about": "Über",
     "projects": "Projekte",
     "contact": "Kontakt",
     "greeting": "Hallo, ich bin Eloïck",
+    "iam": "ein",
+    "buttonheader": "Mehr sehen",
     "description1": "Ich liebe es, Dinge für das Web und Videospiele zu erstellen",
     "description2": "Immer auf der Suche nach neuen Herausforderungen und neuen Technologien!",
-    "description3": "Student in Haguenau im Bereich Digital Creation (Berufsfeld Multimedia und Internet)",
+    "description3": "Student in Haguenau im BUT MMI (Berufsfeld Multimedia und Internet)",
     "projectHeading": "Projekte",
     "contactMe": "Kontaktieren Sie mich",
+    "champform1": "Name",
+    "champform2": "Email",
+    "champform3": "Betreff",
+    "champform4": "Nachricht",
+    "buttonform": "Senden",
     "email": "Oder senden Sie mir eine E-Mail an contact@eloick.fr"
   }
 }

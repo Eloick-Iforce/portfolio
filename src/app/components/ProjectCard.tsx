@@ -4,8 +4,10 @@
 
 import AOS from "aos";
 import "aos/dist/aos.css";
-import { useEffect } from "react";
+import { useContext, useEffect } from "react";
 import Image from "next/image";
+
+import LanguageContext from "./LanguageContext";
 
 type ProjectCardProps = {
   project: {
@@ -24,6 +26,7 @@ type ProjectCardProps = {
 };
 
 const ProjectCard = ({ project }: ProjectCardProps) => {
+  const { language } = useContext(LanguageContext);
   useEffect(() => {
     AOS.init({
       duration: 1000,
@@ -45,7 +48,7 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
       <div className="p-4">
         <h2 className="text-2xl font-bold">{project.name}</h2>
-        <p className="mt-2 text-gray-300">{project.description.en}</p>
+        <p className="mt-2 text-gray-300">{project.description[language]}</p>
         <ul className="mt-2 flex gap-2">
           {project.technologies &&
             project.technologies.map((tech) => (

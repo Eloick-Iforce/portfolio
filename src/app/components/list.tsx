@@ -1,12 +1,15 @@
 /* eslint-disable */
 "use client";
-import { useState, useEffect } from "react";
+import { useState, useEffect, useContext } from "react";
 import AOS from "aos";
 import "aos/dist/aos.css";
 import { FaLinkedin, FaGithub, FaFilePdf, FaGamepad } from "react-icons/fa";
+import trad from "../../../public/trad.json";
+import LanguageContext from "./LanguageContext";
 
 const List = () => {
   const [activeParagraph, setActiveParagraph] = useState(0);
+  const { language } = useContext(LanguageContext);
 
   useEffect(() => {
     AOS.init({});
@@ -49,17 +52,16 @@ const List = () => {
     >
       <div className="mt-10 flex h-full flex-col justify-center">
         <p className={getParagraphClass(1) + " text-scroll"} data-aos="fade-up">
-          I like to create things for the web and video games
+          {trad[language].description1}
         </p>
         <p
           className={getParagraphClass(2) + " text-scroll my-6 lg:my-14"}
           data-aos="fade-up"
         >
-          Constantly looking for new challenges and new technologies !
+          {trad[language].description2}
         </p>
         <p className={getParagraphClass(3) + " text-scroll"} data-aos="fade-up">
-          Student at Haguenau in BUT Digital Creation (Métier du Multimédia et
-          de l'Internet)
+          {trad[language].description3}
         </p>
         <div className="mt-24 flex flex-col gap-4 sm:flex-row sm:gap-24">
           <button

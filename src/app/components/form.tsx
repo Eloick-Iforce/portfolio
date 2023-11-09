@@ -1,9 +1,12 @@
 "use client";
-import { useState } from "react";
+import { useState, useContext } from "react";
 import { toast } from "react-hot-toast";
 import TextareaAutosize from "react-textarea-autosize";
+import trad from "../../../public/trad.json";
+import LanguageContext from "./LanguageContext";
 
 const FormComponent = () => {
+  const { language } = useContext(LanguageContext);
   const [name, setName] = useState("");
   const [email, setEmail] = useState("");
   const [subject, setSubject] = useState("");
@@ -15,7 +18,7 @@ const FormComponent = () => {
     const data = {
       embeds: [
         {
-          title: "New message from website",
+          title: "Un nouveau message est arrivé !",
           fields: [
             {
               name: "Name",
@@ -68,14 +71,14 @@ const FormComponent = () => {
 
   return (
     <div className="bg-primary p-8" id="contact">
-      <h2 className="text-4xl font-bold">Contact me</h2>
+      <h2 className="text-4xl font-bold">{trad[language].contactMe}</h2>
       <div className="flex items-center justify-center">
         <form
           onSubmit={handleSubmit}
           className="mt-12 flex flex-col items-center justify-center"
         >
           <label className="mb-4">
-            Name:
+            {trad[language].champform1}
             <input
               required
               type="text"
@@ -85,7 +88,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            Mail:
+            {trad[language].champform2}
             <input
               required
               type="email"
@@ -95,7 +98,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            Subject:
+            {trad[language].champform3}
             <input
               required
               type="text"
@@ -105,7 +108,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            Message:
+            {trad[language].champform4}
             <TextareaAutosize
               required
               value={message}
@@ -115,14 +118,12 @@ const FormComponent = () => {
           </label>
           <input
             type="submit"
-            value="Send"
+            value={trad[language].buttonform}
             className="duration-900 w-64 cursor-pointer gap-4 rounded-lg border-4 border-white p-4 text-center text-white transition-colors hover:bg-white hover:text-primary md:w-96"
           />
         </form>
       </div>
-      <p className="mt-4 text-center">
-        Or send me a email at contact@eloick.fr
-      </p>
+      <p className="mt-4 text-center">{trad[language].email}</p>
     </div>
   );
 };

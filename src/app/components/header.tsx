@@ -3,15 +3,19 @@
 
 import TypeIt from "typeit-react";
 import { FaArrowDown } from "react-icons/fa";
+import { useContext } from "react";
+import LanguageContext from "./LanguageContext";
+import trad from "../../../public/trad.json";
 
 function Header() {
+  const { language } = useContext(LanguageContext);
   return (
     <header className="flex h-screen flex-col items-center justify-center p-5 text-white">
       <h1 className="text-2xl font-bold drop-shadow-2xl sm:text-4xl md:text-6xl lg:text-8xl">
-        Hi, I'm Eloïck
+        {trad[language].greeting}
       </h1>
       <h2 className="text-xl font-bold drop-shadow-2xl sm:text-2xl md:text-3xl lg:text-4xl">
-        a
+        {trad[language].iam}
         <TypeIt
           getBeforeInit={(instance) => {
             instance
@@ -36,7 +40,7 @@ function Header() {
             if (element) element.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          See more <FaArrowDown />
+          {trad[language].buttonheader} <FaArrowDown />
         </button>
       </div>
     </header>
