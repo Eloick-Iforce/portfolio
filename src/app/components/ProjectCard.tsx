@@ -48,7 +48,9 @@ const ProjectCard = ({ project }: ProjectCardProps) => {
       </div>
       <div className="p-4">
         <h2 className="text-2xl font-bold">{project.name}</h2>
-        <p className="mt-2 text-gray-300">{project.description[language]}</p>
+        <p className="mt-2 text-gray-300">
+          {project.description[language as "en" | "fr" | "de"]}
+        </p>
         <ul className="mt-2 flex gap-2">
           {project.technologies &&
             project.technologies.map((tech) => (

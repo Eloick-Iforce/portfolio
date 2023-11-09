@@ -4,7 +4,6 @@ import ProjectCard from "./ProjectCard";
 import data from "../../../public/data.json";
 
 const Projects = () => {
-  
   const [selectedTech, setSelectedTech] = useState<string | null>(null);
 
   return (
@@ -33,9 +32,12 @@ const Projects = () => {
             (project) =>
               !selectedTech || project.technologies.includes(selectedTech),
           )
-          .map((project) => (
-            <ProjectCard key={project.id} project={project} />
-          ))}
+          .map((project) => {
+            const { EN: en, FR: fr, DE: de } = project.description;
+            const newDescription = { en, fr, de };
+            const newProject = { ...project, description: newDescription };
+            return <ProjectCard key={newProject.id} project={newProject} />;
+          })}
       </div>
     </div>
   );
