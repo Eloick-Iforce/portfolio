@@ -65,9 +65,9 @@
       "id": 5,
       "name": "Hair App",
       "description": {
-        "en": "Hair App is a personal endeavor showcasing humorous hair salons in France. Developed using React, Tailwind, JavaScript, and Next.js technologies, this project offers an interactive and entertaining experience.",
-        "fr": "Hair App est une entreprise personnelle présentant des salons de coiffure humoristiques en France. Développé avec les technologies React, Tailwind, JavaScript et Next.js, ce projet offre une expérience interactive et divertissante.",
-        "de": "Hair App ist ein persönliches Vorhaben, das humorvolle Friseursalons in Frankreich präsentiert. Entwickelt mit den Technologien React, Tailwind, JavaScript und Next.js, bietet dieses Projekt eine interaktive und unterhaltsame Erfahrung."
+        "en": "Hair App is a personal project showcasing humorous hair salons in France. Developed using React, Tailwind, JavaScript, and Next.js technologies, this project offers an interactive and entertaining experience.",
+        "fr": "Hair App est un projet personnelle présentant des salons de coiffure humoristiques en France. Développé avec les technologies React, Tailwind, JavaScript et Next.js, ce projet offre une expérience interactive et divertissante.",
+        "de": "Hair App ist ein persönliches Projekt, das humorvolle Friseursalons in Frankreich präsentiert. Entwickelt mit den Technologien React, Tailwind, JavaScript und Next.js, bietet dieses Projekt eine interaktive und unterhaltsame Erfahrung."
       },
       "image": "/img/hair.png",
       "url": "https://hair-app-chi.vercel.app/",
