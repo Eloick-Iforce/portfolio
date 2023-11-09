@@ -14,10 +14,10 @@ function Header() {
   return (
     <header className="flex h-screen flex-col items-center justify-center p-5 text-white">
       <h1 className="text-2xl font-bold drop-shadow-2xl sm:text-4xl md:text-6xl lg:text-8xl">
-        {typedTrad[language as keyof Translations]["greeting"]}
+        {typedTrad[language as keyof Translations].greeting}
       </h1>
       <h2 className="text-xl font-bold drop-shadow-2xl sm:text-2xl md:text-3xl lg:text-4xl">
-        {typedTrad[language as keyof Translations]["iam"]}
+        {typedTrad[language as keyof Translations].iam}
         <TypeIt
           getBeforeInit={(instance) => {
             instance
@@ -42,7 +42,7 @@ function Header() {
             if (element) element.scrollIntoView({ behavior: "smooth" });
           }}
         >
-          {typedTrad[language as keyof Translations]["buttonheader"]}{" "}
+          {typedTrad[language as keyof Translations].buttonheader}{" "}
           <FaArrowDown />
         </button>
       </div>

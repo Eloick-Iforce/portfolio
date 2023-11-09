@@ -121,17 +121,17 @@ function Navigation() {
                 <button onClick={closeMenu}> Close </button>
                 <Link href="#about">
                   <p className="text-white">
-                    {typedTrad[language as keyof Translations]["about"]}
+                    {typedTrad[language as keyof Translations].about}
                   </p>
                 </Link>
                 <Link href="#projects">
                   <p className="text-white">
-                    {typedTrad[language as keyof Translations]["projects"]}
+                    {typedTrad[language as keyof Translations].projects}
                   </p>
                 </Link>
                 <Link href="#contact">
                   <p className="text-white">
-                    {typedTrad[language as keyof Translations]["contact"]}
+                    {typedTrad[language as keyof Translations].contact}
                   </p>
                 </Link>
               </div>
@@ -142,17 +142,17 @@ function Navigation() {
             <div className="mr-16 flex items-center gap-8">
               <Link href="#about">
                 <p className="text-white">
-                  {typedTrad[language as keyof Translations]["about"]}
+                  {typedTrad[language as keyof Translations].about}
                 </p>
               </Link>
               <Link href="#projects">
                 <p className="text-white">
-                  {typedTrad[language as keyof Translations]["projects"]}
+                  {typedTrad[language as keyof Translations].projects}
                 </p>
               </Link>
               <Link href="#contact">
                 <p className="text-white">
-                  {typedTrad[language as keyof Translations]["contact"]}
+                  {typedTrad[language as keyof Translations].contact}
                 </p>
               </Link>
             </div>

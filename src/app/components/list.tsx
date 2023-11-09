@@ -54,16 +54,16 @@ const List = () => {
     >
       <div className="mt-10 flex h-full flex-col justify-center">
         <p className={getParagraphClass(1) + " text-scroll"} data-aos="fade-up">
-          {typedTrad[language as keyof Translations]["description1"]}
+          {typedTrad[language as keyof Translations].description1}
         </p>
         <p
           className={getParagraphClass(2) + " text-scroll my-6 lg:my-14"}
           data-aos="fade-up"
         >
-          {typedTrad[language as keyof Translations]["description2"]}
+          {typedTrad[language as keyof Translations].description2}
         </p>
         <p className={getParagraphClass(3) + " text-scroll"} data-aos="fade-up">
-          {typedTrad[language as keyof Translations]["description3"]}
+          {typedTrad[language as keyof Translations].description3}
         </p>
         <div className="mt-24 flex flex-col gap-4 sm:flex-row sm:gap-24">
           <button

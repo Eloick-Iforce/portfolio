@@ -1,5 +1,5 @@
 "use client";
-import { useState,useContext } from "react";
+import { useState, useContext } from "react";
 import ProjectCard from "./ProjectCard";
 import LanguageContext from "./LanguageContext";
 import data from "../../../public/data.json";
@@ -15,7 +15,7 @@ const Projects = () => {
     <div className="my-16 p-8" id="projects">
       <div className="flex items-center justify-between">
         <h2 className="mb-4 text-4xl font-bold">
-          {typedTrad[language as keyof Translations]["projectHeading"]}
+          {typedTrad[language as keyof Translations].projectHeading}
         </h2>
         <div className="my-4">
           {data.technologies && (

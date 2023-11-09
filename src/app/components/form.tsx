@@ -74,7 +74,7 @@ const FormComponent = () => {
   return (
     <div className="bg-primary p-8" id="contact">
       <h2 className="text-4xl font-bold">
-        {typedTrad[language as keyof Translations]["contactMe"]}
+        {typedTrad[language as keyof Translations].contactMe}
       </h2>
       <div className="flex items-center justify-center">
         <form
@@ -82,7 +82,7 @@ const FormComponent = () => {
           className="mt-12 flex flex-col items-center justify-center"
         >
           <label className="mb-4">
-            {typedTrad[language as keyof Translations]["champform1"]}
+            {typedTrad[language as keyof Translations].champform1}
             <input
               required
               type="text"
@@ -92,7 +92,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            {typedTrad[language as keyof Translations]["champform2"]}
+            {typedTrad[language as keyof Translations].champform2}
             <input
               required
               type="email"
@@ -102,7 +102,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            {typedTrad[language as keyof Translations]["champform3"]}
+            {typedTrad[language as keyof Translations].champform3}
             <input
               required
               type="text"
@@ -112,7 +112,7 @@ const FormComponent = () => {
             />
           </label>
           <label className="mb-4">
-            {typedTrad[language as keyof Translations]["champform4"]}
+            {typedTrad[language as keyof Translations].champform4}
             <TextareaAutosize
               required
               value={message}
@@ -122,13 +122,13 @@ const FormComponent = () => {
           </label>
           <input
             type="submit"
-            value={typedTrad[language as keyof Translations]["buttonform"]}
+            value={typedTrad[language as keyof Translations].buttonform}
             className="duration-900 w-64 cursor-pointer gap-4 rounded-lg border-4 border-white p-4 text-center text-white transition-colors hover:bg-white hover:text-primary md:w-96"
           />
         </form>
       </div>
       <p className="mt-4 text-center">
-        {typedTrad[language as keyof Translations]["email"]}
+        {typedTrad[language as keyof Translations].email}
       </p>
     </div>
   );
