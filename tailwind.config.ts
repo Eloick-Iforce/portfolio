@@ -6,9 +6,9 @@ export default {
   theme: {
     extend: {
       colors: {
-        primary: "#DF2935",
-        secondary: "#57C4E5",
-        transparent: "rgba(87, 196, 229, 0.5)",
+        primary: "#2EC4B6",
+        secondary: "#04080F",
+        transparent: "#2EC4B6",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],

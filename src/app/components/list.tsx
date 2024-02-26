@@ -43,7 +43,7 @@ const List = () => {
     if (paragraphIndex === activeParagraph) {
       return "font-medium text-3xl lg:text-7xl text-white drop-shadow-md transition-colors duration-900";
     } else {
-      return "font-medium text-3xl lg:text-7xl text-red-400 transition-colors duration-900";
+      return "font-medium text-3xl lg:text-7xl text-secondary/20 transition-colors duration-900";
     }
   };
 

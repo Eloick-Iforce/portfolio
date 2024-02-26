@@ -14,7 +14,7 @@ export default function HomePage() {
   const [language, setLanguage] = useState("EN");
   return (
     <LanguageContext.Provider value={{ language, setLanguage }}>
-      <main className="min-w-screen scroll-snap-y-mandatory min-h-screen overflow-auto overflow-x-hidden bg-gradient-to-b from-[#595cff] to-[#c6f8ff] text-white">
+      <main className="min-w-screen scroll-snap-y-mandatory min-h-screen overflow-auto overflow-x-hidden bg-secondary text-white">
         <Navigation />
         <div className="scroll-snap-start">
           <Header />

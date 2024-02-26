@@ -48,7 +48,15 @@ function Navigation() {
       } flex items-center justify-between`}
     >
       <div className="text-xl font-bold">
-        Eloïck<span className="text-4xl text-green-500">.</span>fr
+        Eloïck
+        <span
+          className={`text-4xl transition-all duration-500  ${
+            isScrolled ? "text-secondary" : " text-primary "
+          }`}
+        >
+          .
+        </span>
+        fr
       </div>
       <div className="flex gap-5">
         <div className="relative inline-block text-left">
