@@ -8,7 +8,7 @@ export default {
       colors: {
         primary: "#2EC4B6",
         secondary: "#04080F",
-        transparent: "#2EC4B6",
+        transparent: "rgba(254,206,128)",
       },
       fontFamily: {
         sans: ["var(--font-sans)", ...fontFamily.sans],
