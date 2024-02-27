@@ -137,6 +137,9 @@ function Navigation() {
                     {typedTrad[language as keyof Translations].projects}
                   </p>
                 </Link>
+                <Link href="/kanban">
+                  <p className="text-white">Kanban</p>
+                </Link>
                 <Link href="#contact">
                   <p className="text-white">
                     {typedTrad[language as keyof Translations].contact}

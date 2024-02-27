@@ -73,6 +73,19 @@
       "url": "https://hair-app-chi.vercel.app/",
       "git": "https://github.com/Eloick-Iforce/hair-app",
       "technologies": ["React", "Tailwind", "JavaScript", "Nextjs"]
+    },
+    {
+      "id": 6,
+      "name": "Kanban",
+      "description": {
+        "EN": "My portfolio is a personal project that showcases my skills and projects. Developed using React, Tailwind, and JavaScript technologies, this project offers an interactive and visually appealing experience.",
+        "FR": "Mon portfolio est un projet personnel qui présente mes compétences et mes projets. Développé avec les technologies React, Tailwind et JavaScript, ce projet offre une expérience interactive et visuellement attrayante.",
+        "DE": "Mein Portfolio ist ein persönliches Projekt, das meine Fähigkeiten und Projekte präsentiert. Entwickelt mit den Technologien React, Tailwind und JavaScript, bietet dieses Projekt eine interaktive und visuell ansprechende Erfahrung."
+      },
+      "image": "/img/kanban.png",
+      "url": "https://eloick.fr/kanban",
+      "git": "https://github.com/Eloick-Iforce/Kanban",
+      "technologies": ["React", "Tailwind", "JavaScript"]
     }
   ],
   "technologies": [
