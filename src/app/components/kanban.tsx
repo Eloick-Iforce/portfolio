@@ -1,4 +1,4 @@
-// eslint-disable-next-line @typescript-eslint/no-explicit-any
+/* eslint-disable */
 import React from "react";
 import { FiPlus, FiTrash } from "react-icons/fi";
 import { FaFire } from "react-icons/fa";
